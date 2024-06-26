@@ -7,7 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { ModelViewerComponent } from './model-viewer/model-viewer.component';
-import { NgxParticlesModule } from '@tsparticles/angular';
 import { SecoundModelViewerComponent } from './secound-model-viewer/secound-model-viewer.component';
 
 @NgModule({
