@@ -19,8 +19,7 @@ import { SecoundModelViewerComponent } from './secound-model-viewer/secound-mode
   imports: [
     MatButtonModule,
     BrowserModule,
-    AppRoutingModule,
-    NgxParticlesModule
+    AppRoutingModule
   ],
   providers: [
     provideAnimationsAsync()
