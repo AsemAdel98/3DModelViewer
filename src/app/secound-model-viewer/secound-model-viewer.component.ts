@@ -55,7 +55,7 @@ export class SecoundModelViewerComponent {
     this.scene = new THREE.Scene();
 
     // Create a camera
-    this.camera = new THREE.PerspectiveCamera(30, width / height, 0.1, 1000);
+    this.camera = new THREE.PerspectiveCamera(40, width / height, 0.1, 1000);
     this.camera.position.set(0, 0, 5); // Adjust this as necessary
     this.camera.lookAt(new THREE.Vector3(0, 0, 0));
     this.scene.add(this.camera);
