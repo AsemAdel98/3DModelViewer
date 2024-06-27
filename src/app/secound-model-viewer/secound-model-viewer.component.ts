@@ -1,7 +1,7 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-
+declare var $:any;
 @Component({
   selector: 'app-secound-model-viewer',
   templateUrl: './secound-model-viewer.component.html',
@@ -26,6 +26,8 @@ export class SecoundModelViewerComponent {
   constructor() { }
 
   ngOnInit(): void {
+
+
     // Initialize Three.js environment
     this.initThreeJS();
 
@@ -40,6 +42,15 @@ export class SecoundModelViewerComponent {
 
     // Begin animation loop
     this.animate();
+    $('#HomeBackground').particleground({
+      dotColor: '#fff',
+      lineColor: 'transparent',
+      parallax:false,
+      particleRadius: 2,
+      parallaxFactor: 100,
+      density: 10000,
+      proximity:110
+  });
   }
 
 
