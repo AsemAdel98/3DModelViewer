@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { ModelViewerComponent } from './model-viewer/model-viewer.component';
 import { SecoundModelViewerComponent } from './secound-model-viewer/secound-model-viewer.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ModelViewerComponent,
-    SecoundModelViewerComponent
+    SecoundModelViewerComponent,
+    NavbarComponent
   ],
   imports: [
     MatButtonModule,
